@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Shorts Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <h2>Finance<span>Pipeline</span></h2>
+            </div>
+            <nav class="steps-nav">
+                <div class="step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Idea Generator</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Script Structure</div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Voiceover Script</div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Visual Direction</div>
+                </div>
+                <div class="step" data-step="5">
+                    <div class="step-number">5</div>
+                    <div class="step-text">Veo 3 Prompts</div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <header>
+                <h1>Phase 1: Video Idea Generator</h1>
+                <p>Select your strategic inputs to generate highly optimized viral ideas.</p>
+            </header>
+
+            <div class="form-container">
+                <!-- Q1 -->
+                <div class="question-block">
+                    <h3>1. Audience Psychographic</h3>
+                    <p>Who stops scrolling for this content?</p>
+                    <div class="options-grid" id="q1">
+                        <div class="option-card" onclick="selectOption('q1', 'Someone whose salary disappears before month ends — and it genuinely stresses them')">
+                            <h4>Salary Stress</h4>
+                            <p>Living paycheck to paycheck.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q1', 'Someone who knows they should invest but freezes every time they try to start')">
+                            <h4>Analysis Paralysis</h4>
+                            <p>Scared to make the first move.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q1', 'Someone burned by get-rich content before — now skeptical of all finance advice')">
+                            <h4>The Skeptic</h4>
+                            <p>Burned by fake gurus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="question-block">
+                    <h3>2. Video Purpose</h3>
+                    <p>What is this video trying to do?</p>
+                    <div class="options-grid" id="q2">
+                        <div class="option-card" onclick="selectOption('q2', 'WARN — protect viewer from a mistake they dont know they are making')">
+                            <h4>Warn</h4>
+                            <p>Protect from hidden mistakes.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q2', 'MENTOR — teach one concept the way a knowledgeable friend would explain it')">
+                            <h4>Mentor</h4>
+                            <p>Teach a friendly concept.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q2', 'CORRECT — destroy a belief viewer holds that is quietly hurting them')">
+                            <h4>Correct</h4>
+                            <p>Destroy a toxic belief.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q2', 'SHIFT — change how viewer thinks about money at a fundamental level')">
+                            <h4>Shift</h4>
+                            <p>Fundamental perspective flip.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q2', 'VALIDATE — make viewer feel seen and understood before offering direction')">
+                            <h4>Validate</h4>
+                            <p>Empathy before direction.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="question-block">
+                    <h3>3. Affiliate Category</h3>
+                    <p>What type of product fits your channel now?</p>
+                    <div class="options-grid" id="q3">
+                        <div class="option-card" onclick="selectOption('q3', 'Apps — budgeting, investing, tracking')">
+                            <h4>Apps</h4>
+                            <p>Software and tools.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q3', 'Books — personal finance, mindset')">
+                            <h4>Books</h4>
+                            <p>Mindset and education.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q3', 'Courses — financial education')">
+                            <h4>Courses</h4>
+                            <p>In-depth learning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="question-block">
+                    <h3>4. Hook Style</h3>
+                    <p>How should the first 3 seconds hit?</p>
+                    <div class="options-grid" id="q4">
+                        <div class="option-card" onclick="selectOption('q4', 'Fear — show what they are silently losing')">
+                            <h4>Fear</h4>
+                            <p>Show silent losses.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q4', 'Curiosity — truth they have never heard')">
+                            <h4>Curiosity</h4>
+                            <p>A hidden truth.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q4', 'Shock — opposite of what they believe')">
+                            <h4>Shock</h4>
+                            <p>Counter-intuitive.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q4', 'Relatable — this video is about me')">
+                            <h4>Relatable</h4>
+                            <p>Deeply personal mirror.</p>
+                        </div>
+                        <div class="option-card" onclick="selectOption('q4', 'Aspirational — this is possible for me')">
+                            <h4>Aspirational</h4>
+                            <p>Inspiring hope.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="primary-btn" onclick="generatePrompt()">Generate Phase 1 Prompt</button>
+
+                <div class="output-section" id="output-section" style="display: none;">
+                    <h3>Generated Prompt for AI</h3>
+                    <p>Copy this prompt and paste it into ChatGPT to generate your 5 ideas.</p>
+                    <div class="code-box">
+                        <textarea id="prompt-output" readonly></textarea>
+                        <button class="copy-btn" onclick="copyPrompt()">Copy to Clipboard</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
